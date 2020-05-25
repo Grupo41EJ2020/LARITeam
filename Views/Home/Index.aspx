@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>
-    PIA 👍
+   Bienvenido a la página del PIA de LARI TEAM 👍
     </h1>
+    <a href="/Tema/Tema">Ver temas</a>
 </body>
 </html>

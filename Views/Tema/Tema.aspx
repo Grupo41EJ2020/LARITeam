@@ -41,6 +41,7 @@
     <p>
         <%: Html.ActionLink("Crear Nuevo Tema", "Create") %>
     </p>
+    <a href="/Home/Index">Regresar</a>
 
 </body>
 </html>
