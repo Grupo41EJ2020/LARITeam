@@ -22,7 +22,7 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Edit", new { id=item.IdTema }) %> |
+                <%: Html.ActionLink("Editar", "TemaEdit", new { id=item.IdTema }) %> |
                 <%: Html.ActionLink("Ver Detalles", "TemaDetails", new { id=item.IdTema })%> |
                 <%: Html.ActionLink("Borrar", "TemaDelete", new {  id=item.IdTema  })%>
             </td>
