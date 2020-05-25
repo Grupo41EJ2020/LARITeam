@@ -4,17 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Pia Desarrollo de Software</title>
+    <title>Index</title>
 </head>
 <body>
-
-    <img src="../../Content/Imagenes/images.png" alt="Logo de FACPyA" /> 
-    <h1>
-   Bienvenido a la página del PIA de LARI TEAM 👍
-    </h1>
-    <a href="/Tema/Tema">Ver temas</a>
-
-    <a href="/Empleados/Index">Ver Empleados</a> 
+    
+    <a href="/Home/Index">Inicio</a>
+    <p>Aqui se mostrara la informacion de los Empleados</p>
+    <a href="/Empleados/Create">Nuevo Empleado</a>
 
 </body>
 </html>

@@ -66,11 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\EmpleadosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TemaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\ITema.cs" />
     <Compile Include="Models\RepositorioTema.cs" />
     <Compile Include="Models\Tema.cs" />
@@ -78,8 +80,11 @@
     <Compile Include="Utilerias\BaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Imagenes\images.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Views\Empleados\Create.aspx" />
+    <Content Include="Views\Empleados\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Tema\Tema.aspx" />
     <Content Include="Views\Tema\TemaDelete.aspx" />
