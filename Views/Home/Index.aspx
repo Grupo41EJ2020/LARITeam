@@ -11,5 +11,9 @@
    Bienvenido a la página del PIA de LARI TEAM 👍
     </h1>
     <a href="/Tema/Tema">Ver temas</a>
+    <a href="/Curso/CursoM">Ver Cursos</a>
+        
+
+
 </body>
 </html>
