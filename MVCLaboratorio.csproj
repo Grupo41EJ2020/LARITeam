@@ -83,6 +83,7 @@
     <Content Include="Content\Imagenes\images.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Views\Empleados\ConsultarTodo.aspx" />
     <Content Include="Views\Empleados\Create.aspx" />
     <Content Include="Views\Empleados\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />

@@ -9,7 +9,7 @@
 <body>
     
     <a href="/Home/Index">Inicio</a>
-    <p>Aqui se mostrara la informacion de los Empleados</p>
+    <p></p>
     <a href="/Empleados/Create">Nuevo Empleado</a>
 
 </body>
