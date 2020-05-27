@@ -7,13 +7,13 @@
     <title>Pia Desarrollo de Software</title>
 </head>
 <body>
+
+    <img src="../../Content/Imagenes/images.png" alt="Logo de FACPyA" /> 
     <h1>
    Bienvenido a la página del PIA de LARI TEAM 👍
     </h1>
     <a href="/Tema/Tema">Ver temas</a>
-    <a href="/Curso/CursoM">Ver Cursos</a>
-        
-
-
+    <a href="/Curso/DatosCurso">Ver Cursos</a>
+    <a href="/Empleados/Index">Ver Empleados</a> 
 </body>
 </html>
