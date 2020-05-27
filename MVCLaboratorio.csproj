@@ -87,11 +87,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="Views\Curso\CursoDetails.aspx" />
     <Content Include="Views\Curso\DatosCurso.aspx" />
+    <Content Include="Views\Empleados\ConsultarPorID.aspx" />
     <Content Include="Views\Empleados\ConsultarTodo.aspx" />
     <Content Include="Views\Empleados\Create.aspx" />
     <Content Include="Views\Empleados\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\ErrorEmpleados.aspx" />
     <Content Include="Views\Tema\Tema.aspx" />
     <Content Include="Views\Tema\TemaDelete.aspx" />
     <Content Include="Views\Tema\TemaDetails.aspx" />

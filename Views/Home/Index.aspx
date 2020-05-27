@@ -14,6 +14,6 @@
     </h1>
     <a href="/Tema/Tema">Ver temas</a>
     <a href="/Curso/DatosCurso">Ver Cursos</a>
-    <a href="/Empleados/Index">Ver Empleados</a> 
+    <a href="/Empleados/ConsultarTodo">Ver Empleados</a> 
 </body>
 </html>
