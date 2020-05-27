@@ -60,13 +60,80 @@ namespace MVCLaboratorio.Controllers
                 miCurso.IdEmpleado = int.Parse(dtCurso.Rows[0]["IdEmpleado"].ToString());
                 return View(miCurso);
             }
-            else //no se encontro
+            else 
             {
                 return View("Error");
             }
 
         }
 
+        public ActionResult CursoDelete(int id)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdCurso", id));
+
+            DataTable dtCurso = BaseHelper.ejecutarConsulta("sp_Curso_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Curso miCurso = new Curso();
+
+            if (dtCurso.Rows.Count > 0)
+            {
+                miCurso.IdCurso = int.Parse(dtCurso.Rows[0]["IdCurso"].ToString());
+                miCurso.Descripcion = dtCurso.Rows[0]["Descripcion"].ToString();
+                miCurso.IdEmpleado = int.Parse(dtCurso.Rows[0]["IdEmpleado"].ToString());
+                return View(miCurso);
+            }
+            else
+            {
+                return View("Error");
+            }
+
+        }
+
+        [HttpPost]
+        public ActionResult CursoDelete(int id,FormCollection frm)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdCurso", id));
+
+            BaseHelper.ejecutarConsulta("sp_Curso_Eliminar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("DatosCurso");
+        }
+
+        public ActionResult CursoEdit(int id)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdCurso", id));
+
+            DataTable dtCurso = BaseHelper.ejecutarConsulta("sp_Curso_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Curso miCurso = new Curso();
+
+            if (dtCurso.Rows.Count > 0)
+            {
+                miCurso.IdCurso = int.Parse(dtCurso.Rows[0]["IdCurso"].ToString());
+                miCurso.Descripcion = dtCurso.Rows[0]["Descripcion"].ToString();
+                miCurso.IdEmpleado = int.Parse(dtCurso.Rows[0]["IdEmpleado"].ToString());
+                return View(miCurso);
+            }
+            else
+            {
+                return View("Error");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult CursoEdit(int id, Curso datos)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdCurso", id));
+            parametros.Add(new SqlParameter("@Descripcion", datos.Descripcion));
+            parametros.Add(new SqlParameter("@IdEmpleado", datos.IdEmpleado));
+
+            BaseHelper.ejecutarConsulta("sp_Curso_Actualizar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("DatosCurso");
+
+        }
 
         }
     }

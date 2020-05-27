@@ -7,9 +7,9 @@
     <title>Datos del Curso</title>
 </head>
 <body>
+    <h2>Listado de Cursos
+        </h2>
     <table>
-        <h1>Listado de Cursos
-       </h1>
         <tr>
             <th></th>
             <th>

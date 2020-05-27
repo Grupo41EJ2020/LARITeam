@@ -44,7 +44,7 @@ namespace MVCLaboratorio.Controllers
         {
             //obtener todos los videos
 
-            DataTable dtEmpleados = BaseHelper.ejecutarConsulta("sp_Empleados_ConsultarTodo", CommandType.StoredProcedure);
+            DataTable dtEmpleados = BaseHelper.ejecutarConsulta("sp_Empleado_ConsultarTodo", CommandType.StoredProcedure);
             List<Empleado> lstEmpleados = new List<Empleado>();
 
             //convertir el DataTable en List<Video>

@@ -85,7 +85,9 @@
     <Content Include="Content\Imagenes\images.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Views\Curso\CursoDelete.aspx" />
     <Content Include="Views\Curso\CursoDetails.aspx" />
+    <Content Include="Views\Curso\CursoEdit.aspx" />
     <Content Include="Views\Curso\DatosCurso.aspx" />
     <Content Include="Views\Empleados\ConsultarTodo.aspx" />
     <Content Include="Views\Empleados\Create.aspx" />
