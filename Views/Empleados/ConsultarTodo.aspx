@@ -16,9 +16,7 @@
             <th>
                 Nombre
             </th>
-            <th>
-                Direccion
-            </th>
+            
         </tr>
 
     <% foreach (var item in Model) { %>
@@ -26,7 +24,7 @@
         <tr>
             <td>
                 <%: Html.ActionLink("Editar", "Edit", new {id=item.IdEmpleado}) %> |
-                <%: Html.ActionLink("Ver detalles", "Details", new {id=item.IdEmpleado})%> |
+                <%: Html.ActionLink("Ver detalles", "ConsultarPorID", new {id=item.IdEmpleado})%> |
                 <%: Html.ActionLink("Borrar", "Delete", new {id=item.IdEmpleado})%>
             </td>
             <td>
@@ -35,9 +33,7 @@
             <td>
                 <%: item.Nombre %>
             </td>
-            <td>
-                <%: item.Direccion %>
-            </td>
+            
         </tr>
     
     <% } %>

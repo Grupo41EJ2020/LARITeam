@@ -64,5 +64,29 @@ namespace MVCLaboratorio.Controllers
             return View(lstEmpleados);
         }
 
+        public ActionResult ConsultarPorID(int id)
+        {
+            //Consultar los datos del video
+
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("IdEmpleado", id));
+
+            DataTable dtEmpleado = BaseHelper.ejecutarConsulta("sp_Empleado_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Empleado elEmpleado = new Empleado();
+
+            if (dtEmpleado.Rows.Count > 0)
+            {
+                elEmpleado.IdEmpleado = int.Parse(dtEmpleado.Rows[0]["IdEmpleado"].ToString());
+                elEmpleado.Nombre = dtEmpleado.Rows[0]["Nombre"].ToString();
+                elEmpleado.Direccion = dtEmpleado.Rows[0]["Direccion"].ToString();
+                return View(elEmpleado); 
+            }
+            else  //no encontrado
+            {
+                return View("Error");
+            } 
+            
+        }
+
     }
 }
