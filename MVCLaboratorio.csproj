@@ -78,6 +78,8 @@
     <Compile Include="Models\ICurso.cs" />
     <Compile Include="Models\ITema.cs" />
     <Compile Include="Models\RepositorioCurso.cs" />
+    <Compile Include="Models\IEmpleado.cs" />
+    <Compile Include="Models\RepositorioEmpleados.cs" />
     <Compile Include="Models\RepositorioTema.cs" />
     <Compile Include="Models\Tema.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,9 +94,11 @@
     <Content Include="Views\Curso\CursoDetails.aspx" />
     <Content Include="Views\Curso\CursoEdit.aspx" />
     <Content Include="Views\Curso\DatosCurso.aspx" />
+    <Content Include="Views\Empleados\Delete.aspx" />
     <Content Include="Views\Empleados\ConsultarPorID.aspx" />
     <Content Include="Views\Empleados\ConsultarTodo.aspx" />
     <Content Include="Views\Empleados\Create.aspx" />
+    <Content Include="Views\Empleados\Edit.aspx" />
     <Content Include="Views\Empleados\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Shared\Error.aspx" />
