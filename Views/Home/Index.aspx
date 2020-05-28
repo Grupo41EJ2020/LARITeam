@@ -16,5 +16,8 @@
     <a href="/Curso/DatosCurso">Ver Cursos</a>
     <a href="/Empleados/ConsultarTodo">Ver Empleados</a> 
     <a href="/Videos/Lista">Ver videos</a>
+    <a href="/Curso_Tema/Curso_Tema">Ver Curso Tema</a>
+    <a href="/Curso_Tema_Video/Curso_Tema_Video">Ver Curso Tema Video</a>
+   
 </body>
 </html>

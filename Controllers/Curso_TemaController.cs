@@ -21,7 +21,7 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
-        public ActionResult DatosCurso_Tema()
+        public ActionResult Curso_Tema()
         {
             return View(repoCurso_Tema.obtenerCurso_Tema());
         }

@@ -20,7 +20,7 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
-        public ActionResult DatosCurso_Tema_Video()
+        public ActionResult Curso_Tema_Video()
         {
             return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video());
         }
@@ -30,7 +30,7 @@ namespace MVCLaboratorio.Controllers
             return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));
         }
 
-        public ActionResult Curso_TemaDelete(int id)
+        public ActionResult Curso_Tema_VideoDelete(int id)
         {
             return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));
         }
