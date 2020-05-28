@@ -43,7 +43,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Crear nuevo Curso", "Create") %>
+        <%: Html.ActionLink("Crear nuevo Curso", "CursoCreate") %>
     </p>
     <a href="/Home/Index">Regresar al inicio</a>
 </body>
