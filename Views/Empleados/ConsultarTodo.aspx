@@ -23,7 +23,7 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "ConsultarPorID", new {id=item.IdEmpleado}) %> |
+                <%: Html.ActionLink("Editar", "Edit", new {id=item.IdEmpleado}) %> |
                 <%: Html.ActionLink("Ver detalles", "ConsultarPorID", new {id=item.IdEmpleado})%> |
                 <%: Html.ActionLink("Borrar", "Delete", new {id=item.IdEmpleado})%>
             </td>

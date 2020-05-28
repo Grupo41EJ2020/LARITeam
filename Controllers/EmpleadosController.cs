@@ -10,7 +10,6 @@ using MVCLaboratorio.Models;
 using MVCLaboratorio.Utilerias;
 
 namespace MVCLaboratorio.Controllers
-
 {
     public class EmpleadosController : Controller
     {
