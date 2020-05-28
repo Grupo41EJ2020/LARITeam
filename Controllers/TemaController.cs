@@ -56,5 +56,19 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("Tema");
         }
 
+        public ActionResult TemaCreate()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult TemaCreate(Tema datosTema)
+        {
+
+            repoTema.insertarTema(datosTema);
+            return RedirectToAction("Tema");
+            ////return RedirectToAction("Index");
+        }
+
     }
 }

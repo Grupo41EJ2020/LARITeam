@@ -126,6 +126,7 @@
     <Content Include="Views\Shared\Error.aspx" />
     <Content Include="Views\Shared\ErrorEmpleados.aspx" />
     <Content Include="Views\Tema\Tema.aspx" />
+    <Content Include="Views\Tema\TemaCreate.aspx" />
     <Content Include="Views\Tema\TemaDelete.aspx" />
     <Content Include="Views\Tema\TemaDetails.aspx" />
     <Content Include="Views\Tema\TemaEdit.aspx" />
