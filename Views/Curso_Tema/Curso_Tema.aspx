@@ -44,9 +44,7 @@
 
     </table>
 
-    <p>
-        <%: Html.ActionLink("Crear NUEVO", "Create") %>
-    </p>
+   <a href="/Home/Index">Regresar al inicio</a>
 
 </body>
 </html>
