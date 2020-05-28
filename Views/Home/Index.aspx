@@ -15,5 +15,6 @@
     <a href="/Tema/Tema">Ver temas</a>
     <a href="/Curso/DatosCurso">Ver Cursos</a>
     <a href="/Empleados/ConsultarTodo">Ver Empleados</a> 
+    <a href="/Videos/Lista">Ver Videos</a> 
 </body>
 </html>
