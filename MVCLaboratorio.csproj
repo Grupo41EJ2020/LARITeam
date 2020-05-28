@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CursoController.cs" />
+    <Compile Include="Controllers\Curso_TemaController.cs" />
+    <Compile Include="Controllers\Curso_Tema_VideoController.cs" />
     <Compile Include="Controllers\EmpleadosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TemaController.cs" />
@@ -75,12 +77,18 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Curso.cs" />
+    <Compile Include="Models\Curso_Tema.cs" />
+    <Compile Include="Models\Curso_Tema_Video.cs" />
     <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\ICurso.cs" />
+    <Compile Include="Models\ICurso_Tema.cs" />
+    <Compile Include="Models\ICurso_Tema_Video.cs" />
     <Compile Include="Models\ITema.cs" />
     <Compile Include="Models\RepositorioCurso.cs" />
     <Compile Include="Models\IEmpleado.cs" />
     <Compile Include="Models\IVideo.cs" />
+    <Compile Include="Models\RepositorioCurso_Tema.cs" />
+    <Compile Include="Models\RepositorioCurso_Tema_Video.cs" />
     <Compile Include="Models\RepositorioEmpleados.cs" />
     <Compile Include="Models\RepositorioTema.cs" />
     <Compile Include="Models\RepositorioVideo.cs" />
@@ -140,6 +148,10 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Curso_Tema\" />
+    <Folder Include="Views\Curso_Tema_Video\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
