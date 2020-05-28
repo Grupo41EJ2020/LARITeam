@@ -5,9 +5,9 @@ using System.Web;
 
 namespace MVCLaboratorio.Models
 {
-    public class ITema
+    public interface ITema
     {
-        List<Tema> obtenerTema();
+        List<Tema> obtenerTemas();
         Tema obtenerTema(int idTema);
         void insertarTema(Tema datosTema);
         void eliminarTema(int idTema);
