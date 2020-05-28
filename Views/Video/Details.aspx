@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Empleado>" %>
+﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Video>" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -10,18 +10,21 @@
     <fieldset>
         <legend>Fields</legend>
         
-        <div class="display-label">IdEmpleado</div>
-        <div class="display-field"><%: Model.IdEmpleado %></div>
+        <div class="display-label">IdVideo</div>
+        <div class="display-field"><%: Model.IdVideo %></div>
         
         <div class="display-label">Nombre</div>
         <div class="display-field"><%: Model.Nombre %></div>
         
-        <div class="display-label">Direccion</div>
-        <div class="display-field"><%: Model.Direccion %></div>
+        <div class="display-label">Url</div>
+        <div class="display-field"><%: Model.Url %></div>
+        
+        <div class="display-label">FechaPublicacion</div>
+        <div class="display-field"><%: String.Format("{0:g}", Model.FechaPublicacion) %></div>
         
     </fieldset>
     <p>
-        <%: Html.ActionLink("Editar", "ConsultarPorID", new {id=Model.IdEmpleado}) %> |
+        <%: Html.ActionLink("Editar", "Editar", new {id=Model.IdVideo}) %> |
         <%: Html.ActionLink("Regresar a la lista", "ConsultarTodo") %>
     </p>
 

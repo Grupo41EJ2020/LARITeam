@@ -1,17 +1,17 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MVCLaboratorio.Models.Empleado>>" %>
+﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MVCLaboratorio.Models.Video>>" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Lista de Empleados</title>
+    <title>Lista de Videos</title>
 </head>
 <body>
     <table>
         <tr>
             <th></th>
             <th>
-                IdEmpleado
+                IdVideo
             </th>
             <th>
                 Nombre
@@ -23,12 +23,12 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "ConsultarPorID", new {id=item.IdEmpleado}) %> |
-                <%: Html.ActionLink("Ver detalles", "ConsultarPorID", new {id=item.IdEmpleado})%> |
-                <%: Html.ActionLink("Borrar", "Delete", new {id=item.IdEmpleado})%>
+                <%: Html.ActionLink("Editar", "Edit", new {id=item.IdVideo}) %> |
+                <%: Html.ActionLink("Ver Detalles", "Details", new {id=item.IdVideo})%> |
+                <%: Html.ActionLink("Borrar", "Delete", new {id=item.IdVideo})%>
             </td>
             <td>
-                <%: item.IdEmpleado %>
+                <%: item.IdVideo %>
             </td>
             <td>
                 <%: item.Nombre %>
@@ -41,7 +41,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Crear un nuevo Empleado", "Create") %>
+        <%: Html.ActionLink("Crear nuevo Video", "Create") %>
     </p>
 
 </body>
