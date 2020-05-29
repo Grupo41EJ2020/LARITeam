@@ -61,7 +61,7 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@IdCurso", datosCurso_Tema.IdCurso));
             parametros.Add(new SqlParameter("@IdTema", datosCurso_Tema.IdTema));
 
-            BaseHelper.ejecutarConsulta("sp_CursoTema_Insertar", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarSentencia("sp_CursoTema_Insertar", CommandType.StoredProcedure, parametros);
         }
 
         public void eliminarCurso_Tema(int IdCT)

@@ -58,18 +58,15 @@ namespace MVCLaboratorio.Controllers
 
         public ActionResult Curso_TemaCreate()
         {
-
             return View();
         }
 
         [HttpPost]
-        public ActionResult Curso_TemaCreate(int id, Curso_Tema datosCurso_Tema)
+        public ActionResult Curso_TemaCreate(int id,Curso_Tema datosCurso_Tema)
         {
             repoCurso_Tema.insertarCurso_Tema(datosCurso_Tema);
             return RedirectToAction("Curso_Tema");
         }
-
-
 
 
 
