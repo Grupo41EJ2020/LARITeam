@@ -14,14 +14,6 @@
             <legend>Datos</legend>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.IdCTV) %>
-            </div>
-            <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.IdCTV) %>
-                <%: Html.ValidationMessageFor(model => model.IdCTV) %>
-            </div>
-            
-            <div class="editor-label">
                 <%: Html.LabelFor(model => model.IdCT) %>
             </div>
             <div class="editor-field">
