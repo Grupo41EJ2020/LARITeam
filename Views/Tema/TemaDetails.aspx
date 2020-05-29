@@ -18,7 +18,7 @@
         
     </fieldset>
     <p>
-        <%: Html.ActionLink("Editar", "Tema", new { id=Model.IdTema }) %> |
+        <%: Html.ActionLink("Editar", "TemaEdit", new { id=Model.IdTema }) %> |
         <%: Html.ActionLink("Regresar a la tabla", "Tema") %>
     </p>
 
