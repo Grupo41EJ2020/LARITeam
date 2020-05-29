@@ -75,11 +75,11 @@ namespace MVCLaboratorio.Models
         public void actualizarCurso_Tema(Curso_Tema datosCurso_Tema)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            
+            parametros.Add(new SqlParameter("@IdCT", datosCurso_Tema.IdCT));
             parametros.Add(new SqlParameter("@IdCurso", datosCurso_Tema.IdCurso));
             parametros.Add(new SqlParameter("@IdTema", datosCurso_Tema.IdTema));
 
-            BaseHelper.ejecutarConsulta("sp_CursoTema_Actualizar", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarConsulta("sp_CT_Actualizar", CommandType.StoredProcedure, parametros);
         }
     }
 }
