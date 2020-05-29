@@ -13,8 +13,6 @@
         <fieldset>
             <legend>Datos del Curso</legend>
             
-            
-            
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.Descripcion) %>
             </div>

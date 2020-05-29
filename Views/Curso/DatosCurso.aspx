@@ -29,6 +29,7 @@
                 <%: Html.ActionLink("Detalles", "CursoDetails", new {id=item.IdCurso })%> |
                 <%: Html.ActionLink("Borrar", "CursoDelete", new {id=item.IdCurso })%>
             </td>
+
             <td>
                 <%: item.IdCurso %>
             </td>
@@ -43,7 +44,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Crear nuevo Curso", "CursoCreate") %>
+        <%:Html.ActionLink ("Crear nuevo curso", "CursoCreate")  %> 
     </p>
     <a href="/Home/Index">Regresar al inicio</a>
 </body>
