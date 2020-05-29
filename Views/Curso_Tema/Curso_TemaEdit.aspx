@@ -39,7 +39,7 @@
     <% } %>
 
     <div>
-        <%: Html.ActionLink("Back to List", "Index") %>
+        <%: Html.ActionLink("Regresar a la lista", "Curso_Tema") %>
     </div>
 
 </body>
