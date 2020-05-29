@@ -40,7 +40,7 @@ namespace MVCLaboratorio.Controllers
         public ActionResult Curso_TemaDelete(int id, FormCollection frm)
         {
             repoCurso_Tema.eliminarCurso_Tema(id);
-            return RedirectToAction("DatosCurso");
+            return RedirectToAction("Curso_Tema");
         }
 
         public ActionResult Curso_TemaEdit(int id)
@@ -53,20 +53,20 @@ namespace MVCLaboratorio.Controllers
         {
             datos.IdCT = id;
             repoCurso_Tema.actualizarCurso_Tema(datos);
-            return RedirectToAction("DatosCurso_Tema");
+            return RedirectToAction("Curso_Tema");
         }
 
-        public ActionResult Curso_TemaCreate(Curso_Tema datos)
+        public ActionResult Curso_TemaCreate()
         {
 
-            return RedirectToAction("DatosCurso_Tema");
+            return View();
         }
 
         [HttpPost]
         public ActionResult Curso_TemaCreate(int id, Curso_Tema datosCurso_Tema)
         {
             repoCurso_Tema.insertarCurso_Tema(datosCurso_Tema);
-            return RedirectToAction("DatosCurso_Tema");
+            return RedirectToAction("Curso_Tema");
         }
 
 

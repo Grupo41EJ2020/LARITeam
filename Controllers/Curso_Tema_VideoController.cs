@@ -55,10 +55,10 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("DatosCurso_Tema_Video");
         }
 
-        public ActionResult Curso_Tema_VideoCreate(Curso_Tema_Video datos)
+        public ActionResult Curso_Tema_VideoCreate()
         {
 
-            return RedirectToAction("DatosCurso_Tema_Video");
+            return View();
         }
 
         [HttpPost]
