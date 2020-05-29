@@ -20,12 +20,12 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
-        public ActionResult ConsultarTodo()
+        public ActionResult Lista()
         { 
             return View(repoVideo.obtenerVideos()); 
         }
 
-        public ActionResult ConsultarPorID(int id)
+        public ActionResult Details(int id)
         {
             return View(repoVideo.obtenerVideo(id));
         }
@@ -39,14 +39,20 @@ namespace MVCLaboratorio.Controllers
         public ActionResult Delete(int id, FormCollection frm)
         { 
             repoVideo.eliminarVideo(id); 
-            return RedirectToAction("ConsultarTodo");
+            return RedirectToAction("Lista");
         }
 
+        public ActionResult Edit(int id)
+        {
+            return View(repoVideo.obtenerVideo(id));
+        }
+
+    [HttpPost]
         public ActionResult Edit(int id, Video datos) 
         {
             datos.IdVideo = id; 
             repoVideo.actualizarVideo(datos);
-            return RedirectToAction("ConsultarTodo");
+            return RedirectToAction("Lista");
         }
 
         }

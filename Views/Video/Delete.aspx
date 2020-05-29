@@ -27,7 +27,7 @@
     <% using (Html.BeginForm()) { %>
         <p>
 		    <input type="submit" value="Borrar" /> |
-		    <%: Html.ActionLink("Regresar a la lista", "ConsultarTodo") %>
+		    <%: Html.ActionLink("Regresar a la lista", "Lista") %>
         </p>
     <% } %>
 

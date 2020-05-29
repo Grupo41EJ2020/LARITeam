@@ -43,7 +43,7 @@
     <p>
         <%: Html.ActionLink("Crear nuevo Video", "Create") %>
     </p>
-
+    <a href="/Home/Index">Regresar</a>
 </body>
 </html>
 

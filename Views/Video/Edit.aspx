@@ -46,7 +46,7 @@
     <% } %>
 
     <div>
-        <%: Html.ActionLink("Regresar a la lista", "ConsultarTodo") %>
+        <%: Html.ActionLink("Regresar a la lista", "Lista") %>
     </div>
 
 </body>
